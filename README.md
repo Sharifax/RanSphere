@@ -3,20 +3,20 @@ Ransphere aims to detect ransomware attacks as they occur by analyzing network t
 
 Key Components:
 
-Network Traffic Analysis:
+1-Network Traffic Analysis:
 
 Data Collection: Network traffic data is continuously monitored and collected. This includes packet data, flow data, and DNS queries.
   
 Feature Extraction: Important features are extracted from the raw network traffic data. These features might include the frequency of specific types of traffic, unusual patterns in data transmission, and anomalies in DNS queries.
 
   
-Machine Learning (ML) Model:
+2-Machine Learning (ML) Model:
 
   Training Phase: The ML model was trained using historical data including benign and malicious network traffic. Various features extracted from the traffic are used to train the model to recognize normal and abnormal patterns.
   
   Detection Phase: In real-time operation, the trained ML model analyzes incoming network traffic to identify patterns that deviate from the norm, potentially indicating ransomware activity.
   
-Domain Generation Algorithm (DGA) Detection:
+3-Domain Generation Algorithm (DGA) Detection:
 
   Understanding DGAs: Ransomware often uses DGAs to generate a large number of domain names for command and control (C2) servers. These domains are used to communicate with the ransomware payload.
   
